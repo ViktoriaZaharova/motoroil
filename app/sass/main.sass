@@ -1,0 +1,1680 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  color: #171717
+  background: #FFFFFF
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 15px
+  box-sizing: border-box
+  font-family: $default-font
+  border: 1px solid #CFCFCF
+  height: 45px
+  width: 100%
+  color: #000
+  font-size: 16px
+  background: #fff
+
+  &::placeholder
+    color: #454545
+
+select
+  border: 1px solid #CFCFCF
+    radius: 0
+  height: 45px
+  appearance: none
+  background: #FFFFFF
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  border: none
+    radius: 0
+  padding: 0
+  margin: 0
+  cursor: pointer
+  transition: .3s ease
+  font-family: $default-font
+  font-size: 16px
+  width: fit-content
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 10px 10px 11px
+  font-weight: bold
+  max-width: 222px
+  width: 100%
+
+.btn-accent
+  background: $accent
+  color: #fff
+
+  &:hover
+    background: #6673FF
+    color: #fff
+
+.btn-border
+  border: 1px solid $accent
+  color: $accent
+  font-size: 16px
+  font-weight: normal
+  padding: 3px 20px 4px
+  width: fit-content
+  line-height: 19px
+
+  &:hover
+    background: $accent
+    color: #fff
+
+h1
+  font-size: 26px
+  font-weight: bold
+  width: 100%
+  text-align: center
+  margin: 0 auto 40px
+
+h2
+  font-size: 26px
+  font-weight: bold
+  text-align: center
+  width: 100%
+  margin: 0 auto 10px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+.links-accent
+  font-style: italic
+  border-bottom: 1px dashed $accent
+  font-size: 12px
+  color: $accent
+  display: inline-block
+
+  &:hover
+    color: $hover
+
+.color-accent
+  color: $accent
+
+.d-inline
+  display: inline-block
+
+.container
+  max-width: 1200px
+
+.w100
+  width: 100%
+
+.mb-30
+  margin-bottom: 30px
+
+.p-80
+  padding: 80px 0
+
+//header
+.logo
+  max-width: 177px
+  display: flex
+  align-items: center
+
+.top-line
+  width: 100%
+  background: #444444
+  position: relative
+  padding: 9px 0
+  color: #fff
+  font-size: 18px
+
+  h3
+    font-size: 18px
+    font-weight: bold
+
+  p
+    margin: 0 10px 0 26px
+
+.btn-close__line
+  position: absolute
+  right: 15px
+  top: 50%
+  transform: translate(0, -50%)
+  stroke: #fff
+  width: 10px
+  height: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.sale-title
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  text-align: center
+  white-space: nowrap
+  width: 100%
+
+//timer
+.countdown-time
+  border: none
+    radius: 0
+  width: auto
+  height: auto
+  background: transparent
+  font-size: 18px
+  font-family: $default-font
+  font-weight: normal
+
+//form-search
+.form-search
+  max-width: 500px
+  width: 100%
+  height: 35px
+  position: relative
+  margin: 0 30px 0 auto
+
+  &__btn
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    right: 2px
+    border-radius: 12px
+    width: 31px
+    height: 31px
+    background: $accent
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .svg-icon
+      width: 16px
+      height: 16px
+      fill: #fff
+
+  .links-accent
+    right: 46px
+    top: 50%
+    position: absolute
+    transform: translate(0, -50%)
+
+  input
+    padding: 0 100px 0 15px
+    height: 35px
+    border: none
+      radius: 10px
+    background: rgba(218, 0, 55, 0.08)
+    font-size: 13px
+
+    &::placeholder
+      color: #737373
+
+.header-links
+  width: 32px
+  height: 32px
+  fill: #171717
+  margin: 0 30px 0 0
+
+  &:hover
+    fill: $accent
+
+header
+  border-bottom: 1px solid #E5E5E5
+  padding: 20px 0
+  margin: 0 0 40px
+
+.btn-sign
+  max-width: 120px
+  padding: 8px
+
+.basket-links
+  position: relative
+  color: #fff
+
+.basket-val
+  position: absolute
+  width: 16px
+  height: 16px
+  background: $accent
+  border-radius: 50%
+  font-size: 12px
+  font-weight: 500
+  display: flex
+  align-items: center
+  justify-content: center
+  top: -5px
+  right: -2px
+
+.btn-burger
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  width: 28px
+  height: 28px
+  cursor: pointer
+  margin: auto 0
+  position: relative
+  padding: 3px 0
+  z-index: 3
+  transition: .3s ease
+
+  span
+    width: 100%
+    height: 2px
+    background: #171717
+    display: block
+
+.btn-burger.clicked
+
+  background: url("../img/close.svg") no-repeat center
+    size: 100%
+
+  span
+    display: none
+
+
+.mobile-menu
+  position: relative
+  display: none
+
+.mobile-menu-modal
+  display: none
+  position: absolute
+  left: -26px
+  top: -16px
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16)
+  background: #fff
+  z-index: 2
+  max-width: 224px
+  width: 100%
+  min-width: 224px
+
+.mobile-menu-list
+  padding: 68px 0 0
+
+  li
+    border-top: 1px solid #CFCFCF
+
+    a
+      padding: 16px
+      font-weight: 500
+      color: #171717
+
+
+//home
+.form-filter
+  margin: 0 0 20px
+
+  button
+    width: 20%
+
+  h3
+    width: 100%
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 20px
+
+  label
+    margin: 0 0 20px
+    width: 20%
+
+    select
+      width: calc(100% - 15px)
+
+.select2-container
+  width: calc(100% - 15px) !important
+
+.form-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.select2-container--default .select2-selection--single
+  border-radius: 0
+  border: 1px solid #CFCFCF
+  background: #fff
+  height: 45px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 20px 0 15px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  padding: 0
+  color: #737373
+  font-size: 15px
+  font-family: $default-font
+
+.select2-selection__arrow, .select2-container--default .select2-selection--single .select2-selection__arrow
+  background: url("../img/arrow-bottom.svg") no-repeat center
+    size: 100%
+  position: relative
+  right: 0
+  top: 0
+  transform: none
+  width: 12px
+  height: 7px
+
+  b
+    display: none
+
+.select2-search--dropdown
+  display: none
+
+.select2-results__option
+  padding: 5px 14px
+
+.select2-results
+  font-size: 16px
+  color: #444444
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+  background: $accent
+
+.select2-dropdown
+  border-radius: 0
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16)
+  border: 1px solid #CFCFCF
+  background: #fff
+
+.select2-container--default .select2-results__option--selected
+  background: transparent
+
+//popular-brands
+.popular-brands
+  margin: 40px 0 0
+
+.popular-slider
+  padding: 0 60px
+  margin: 50px 0 0
+
+.brand-slide
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  height: 70px
+  max-width: 100px
+  width: 100%
+
+  img
+    max-height: 100%
+
+.slick-slide
+  outline: none
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  width: 30px
+  height: 30px
+  border: 1px solid #CFCFCF
+    radius: 50%
+  background: transparent
+  opacity: 1
+  z-index: 1
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .svg-icon
+    stroke: #CFCFCF
+    width: 7px
+    height: 12px
+    fill: none
+    transition: .3s ease
+
+  &:hover
+    border-color: $accent
+
+    .svg-icon
+      stroke: $accent
+
+.slick-prev
+  left: 0
+
+.slick-next
+  right: 0
+
+//search-category
+.search-category
+  padding: 80px 0
+
+.search-category-item
+  color: #3C3CF1
+  font-size: 14px
+  text-align: center
+  border: 1.5px solid #3C3CF1
+    radius: 15px
+  background: #fff
+  padding: 10px 5px
+  max-width: 110px
+  width: 100%
+  margin: 0 auto
+
+  &:hover
+    background: #6673FF
+    border-color: #6673FF
+    color: #fff
+
+    .svg-icon
+      fill: #fff
+
+  &:focus
+    background: #3C3CF1
+    border-color: #3C3CF1
+    color: #fff
+
+    .svg-icon
+      fill: #fff
+
+.search-category-item__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: $accent
+  width: 32px
+  height: 32px
+  margin: 0 auto 2px
+
+.search-category-list
+  margin: 30px -5px
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+  li
+    width: 10%
+    padding: 0 5px
+
+
+//top-products
+.subtitle
+  width: 100%
+  text-align: center
+  margin: 10px auto 50px
+
+.card-product
+  width: 100%
+  height: 100%
+  position: relative
+
+  &__img
+    width: 100%
+    height: 270px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    img
+      max-height: 100%
+
+  &:hover
+    .btn-favorite
+      display: flex
+
+    .card-product__title
+      color: $accent
+
+  &__title
+    font-weight: bold
+    color: #171717
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+  &__body
+    padding: 25px 0 0
+
+  &__footer
+    margin: 15px 0 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.label-item
+  position: absolute
+  z-index: 1
+  top: 15px
+  left: 10px
+  border: 1px solid #3C3CF1
+  background: #fff
+  padding: 6px 15px
+  font-size: 15px
+  color: $accent
+
+.text-product
+  color: #444444
+  margin: 4px 0 0
+  width: 100%
+
+.label-product
+  position: absolute
+  right: 10px
+  top: 10px
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  li
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+    a
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      width: 40px
+      height: 40px
+
+.val-product
+  font-size: 24px
+  font-weight: 500
+  color: $accent
+  border: 1px solid $accent
+  background: #fff
+  display: flex
+
+.btn-favorite
+  background: #E5E5E5
+  display: none
+  transition: .3s ease
+
+  .svg-icon
+    width: 20px
+    height: 20px
+    fill: #171717
+
+.article
+  margin: 5px 0 0
+  width: 100%
+  color: #737373
+  font-size: 14px
+
+.price-wrapper
+  display: flex
+  align-items: flex-start
+
+.new-price
+  font-size: 24px
+  font-weight: bold
+  color: #171717
+
+.old-price
+  color: #8A8A8A
+  font-size: 18px
+  text-decoration: line-through
+  margin: auto 0 2px 5px
+
+.sale-price
+  color: $accent
+  font-size: 14px
+  display: inline-block
+  margin: 0 0 0 1px
+
+.btn-add-card
+  max-width: none
+  margin: 16px 0 0
+
+//top-car
+.top-car
+  padding: 50px 0
+
+.top-car-slider
+  margin: 50px 0 30px
+  padding: 0 20px
+
+  .slick-arrow
+    border: none
+      radius: 0
+    width: 10px
+    height: 20px
+
+    .svg-icon
+      stroke: #333
+
+
+.car-logo
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 60px
+  margin: 0 auto
+  padding: 0 16px
+  filter: grayscale(100%)
+
+  &:hover
+    filter: none
+
+  img
+    max-height: 100%
+
+//reviews
+.reviews
+  h2
+    margin: 0 auto 50px
+
+.reviews-box
+  line-height: 23px
+
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 20px
+
+  h3
+    width: 100%
+    font-weight: bold
+
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 70px
+    height: 65px
+
+  &__title
+    width: calc(100% - 70px)
+    padding: 0 0 0 15px
+
+.rating-product
+  display: flex
+  align-items: center
+  margin: 7px 0 0
+  color: #737373
+  font-size: 14px
+
+.list-rating
+  display: flex
+  align-items: center
+  margin: 0 10px 0 0
+
+  li
+    width: 24px
+    height: 24px
+    fill: #F2D230
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .star0
+    fill: #999999
+
+.label-star
+  position: relative
+  width: 32px
+  height: 32px
+  cursor: pointer
+
+.inp-star
+  display: none
+
+.inp-star:checked + .svg-icon
+  fill: #F2D230
+
+//seo-content
+.seo-content
+  padding: 50px 0 80px
+
+  .box-text
+    font-size: 15px
+    line-height: 23px
+
+  h3
+    font-weight: bold
+    color: #444
+    margin: 0 0 15px
+    font-size: 16px
+
+  p
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+  .text
+    margin: 0 0 20px
+
+  ul
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+.list-dots
+  li
+    position: relative
+    padding: 0 0 0 16px
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 7px
+      width: 6px
+      height: 6px
+      background: $accent
+      border-radius: 50%
+
+.list-decimal
+  counter-reset: item
+
+  li
+    display: flex
+    align-items: flex-start
+
+    &:before
+      content: counters(item, ".") ". "
+      counter-increment: item
+      margin: 0 10px 0 0
+      color: #3C3CF1
+      font-size: 15px
+      display: inline-block
+
+//advantages
+.advantages
+  padding: 0 0 27px
+
+.advantages-box
+  text-align: center
+  color: #171717
+
+  h4
+    font-weight: bold
+    margin: 25px auto 10px
+    font-size: 18px
+    color: #444
+
+  &__icon
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 60px
+    width: 60px
+
+    img
+      max-height: 100%
+
+//footer
+footer
+  background: #444444
+  color: #fff
+  padding: 60px 0
+
+
+  h4
+    font-weight: bold
+    margin: 0 0 20px
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-end
+
+  li
+    margin: 0 20px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      width: 28px
+      height: 28px
+      display: flex
+      align-items: center
+      justify-content: center
+      fill: #FFFFFF
+
+      &:hover
+        fill: #EDEDED
+
+.form-subscribe
+  display: flex
+  align-items: center
+
+  label
+    max-width: 380px
+    width: 100%
+
+  button
+    margin: 0 0 0 20px
+    max-width: 170px
+
+.footer-box
+  margin: 60px 0 0
+  height: 100%
+
+.footer-menu
+  li
+    margin: 0 0 20px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #fff
+
+      &:hover
+        color: #EDEDED
+
+//modal
+.modal-content
+  border: none
+    radius: 0
+
+  .subtitle
+    font-size: 18px
+    margin: 0 auto
+    max-width: 370px
+    width: 100%
+
+.modal-body
+  padding: 50px 30px
+
+.modal-title
+  margin: 0 auto 7px
+  font-size: 26px
+  font-weight: bold
+  text-align: center
+  line-height: normal
+
+.form-modal
+  margin: 40px auto 0
+
+  label
+    margin: 0 0 20px
+
+  .checkbox
+    margin: 0
+
+  button
+    margin: 20px auto 30px
+    max-width: 100%
+
+.agreement
+  text-align: center
+  max-width: 320px
+  margin: 0 auto
+  line-height: 23px
+
+.label-pass
+  position: relative
+
+.line-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.checkbox
+  display: flex
+  align-items: center
+  color: #171717
+  font-size: 16px
+  font-family: $default-font
+  width: fit-content
+  margin: 0
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  margin: 0 10px 0 0
+  width: 20px
+  height: 20px
+  min-width: 20px
+  border: 1px solid #CFCFCF
+    radius: 4px
+  position: relative
+  cursor: pointer
+  background: #FFFFFF
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 12px
+    height: 8px
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 100%
+    display: none
+    transition: .3s ease
+
+.inp-check:checked + .checkbox-custom
+  background: $accent
+  border-color: $accent
+
+  &:before
+    display: block
+
+.view-pass
+  width: 32px
+  height: 32px
+  position: absolute
+  right: 10px
+  top: 50%
+  transform: translate(0, -50%)
+  fill: #999999
+  cursor: pointer
+
+//sidebar
+.btn-sidebar
+  display: none
+  max-width: none
+  margin: 0 0 40px
+
+.sidebar
+  .form-filter
+    margin: 0 0 40px
+
+    &:last-child
+      margin: 0
+
+    label
+      width: 100%
+      padding: 0
+
+      select
+        width: 100%
+
+    .btn
+      width: 100%
+      max-width: none
+
+    .checkbox
+      margin: 0
+  .select2-container
+    width: 100% !important
+
+.list-checkbox
+  li
+    margin: 0 0 15px
+
+    &:last-child
+      margin: 0
+
+.load-more-wrap
+  border-bottom: 1px dashed $accent
+  width: fit-content
+
+//motor-brands
+.motor-brands
+  padding: 40px 0
+
+.motor-brands-slider
+  padding: 0 40px
+
+  .brand-slide
+    max-width: 123px
+    width: 100%
+    border: 1.5px solid #CFCFCF
+      radius: 15px
+    background: #fff
+    padding: 10px
+
+    &:hover
+      border-color: $accent
+
+//sae-slider
+.sae, .motor-brands
+  h2
+    font-size: 18px
+    margin: 0 0 20px
+
+.sae-slider
+  padding: 0 40px
+
+  .search-category-item
+    max-width: 123px
+
+.content-wrapper
+  padding: 0 0 50px
+
+.result-search
+  width: 100%
+  text-align: right
+  margin: 0 0 30px
+  color: #444444
+  font-size: 14px
+  font-style: italic
+
+.form-basket
+  width: 100%
+
+.basket-product
+  width: 100%
+  margin: 0 0 40px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.basket-product__img
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 100px
+  width: 100%
+  height: 100px
+  img
+    max-height: 100%
+
+.basket-product__title
+  font-weight: bold
+  color: #171717
+
+.basket-product__body
+  width: calc(100% - 100px)
+  padding: 0 0 0 15px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .price-wrapper
+    width: 30%
+  .price-wrapper
+    text-align: center
+    justify-content: center
+
+.number-orders
+  width: 25%
+
+.basket-product__content
+  width: 35%
+
+.amount
+  width: 130px
+  height: 45px
+  border: 1px solid #CFCFCF
+  background: #fff
+  padding: 0 15px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+  span
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #8A8A8A
+    font-size: 24px
+    cursor: pointer
+    &:hover
+      color: $accent
+  input
+    width: 70px
+    border: none
+    text-align: center
+    background: transparent
+    font-size: 20px
+    color: #444444
+    &::placeholder
+      color: #444444
+
+.sum-product
+  width: 20%
+  font-size: 24px
+  font-weight: bold
+  text-align: right
+  p
+    display: none
+    color: #444444
+    font-size: 18px
+    margin: 0 12px 0 0
+    font-weight: normal
+
+.total-basket
+  //max-width: 248px
+  width: fit-content
+  margin: 10px 0 0 auto
+
+  .btn
+    margin: 40px 0 0
+    max-width: none
+    padding: 10px 40px
+
+.total-basket-text
+  display: flex
+  align-items: flex-end
+  color: #444444
+  font-size: 24px
+  padding: 30px 0 0
+  border-top: 1px solid #CFCFCF
+
+.sum
+  color: #171717
+  font-size: 36px
+  font-weight: bold
+  margin: 0 0 0 14px
+
+.basket-wrapper
+  padding: 0 0 80px
+
+.btn-next-form
+  margin: 40px auto 0
+  max-width: 170px
+
+.form-basket-box
+  width: 100%
+  margin: 0 auto
+  border: 1px solid #3C3CF1
+  max-width: 570px
+  padding: 40px 30px
+  label
+    margin: 0 0 20px
+  .checkbox
+    margin: 0
+  .form-row
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0
+    label
+      width: calc(50% - 10px)
+    .w75
+      width: calc(75% - 10px)
+    .w25
+      width: calc(25% - 10px)
+    .w35
+      width: calc(37% - 10px)
+  .select2-container
+    width: 100% !important
+  .select2-container--default .select2-selection--single .select2-selection__rendered
+    color: #454545
+
+.radio-box
+  width: 100%
+  position: relative
+  border: 1px solid #CFCFCF
+  background: #fff
+  cursor: pointer
+  padding: 30px 20px
+  height: 100%
+
+.inp-radio
+  display: none
+
+.radio-custom
+  position: absolute
+  top: 10px
+  left: 10px
+  width: 20px
+  height: 20px
+  border: 1px solid #CFCFCF
+    radius: 50%
+  transition: .3s ease
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    width: 10px
+    height: 10px
+
+.inp-radio:checked + .radio-custom
+  border-color: $accent
+  &:before
+    background: $accent
+
+.radio-title
+  width: 100%
+  display: block
+  text-align: center
+  margin: 0 auto 30px
+  color: #171717
+  font-size: 18px
+  font-weight: bold
+
+.payment-box
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 40px
+  padding: 0 8px
+  img
+    max-height: 100%
+
+.payments
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.confirm-page
+  .basket-product__body
+    .basket-product__content
+      width: 43%
+    .price-wrapper
+      width: 17%
+    .sum-product
+      width: 15%
+
+.confirm-box
+  margin: 0 0 40px
+  h3
+    margin: 0 0 35px
+    font-weight: bold
+    font-size: 20px
+  .box-text
+    line-height: 23px
+
+.customers-section
+  padding: 0 0 50px
+  h2
+    margin: 0 auto 50px
+
+//main-product
+.links-catalogue
+  font-size: 13px
+  border-bottom: 1px dashed $accent
+  margin: auto 0 35px auto
+
+.breadcrumb
+  background: transparent
+  border-radius: 0
+  padding: 0
+  font-size: 14px
+  margin: 0 0 30px
+  li
+    a
+      color: $accent
+
+.breadcrumb-item+.breadcrumb-item::before
+  content: ''
+  margin: 0 10px
+  background: url("../img/arrow-right.svg") no-repeat center
+    size: 100%
+  width: 6px
+  height: 8px
+
+.breadcrumb-item+.breadcrumb-item
+  padding-left: 0
+  display: flex
+  align-items: center
+
+.product-img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  height: 370px
+  img
+    max-height: 100%
+
+.add-favorite
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #171717
+  &:hover
+    fill: $accent
+
+.product-description__head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.product-description
+  h1
+    text-align: left
+    width: fit-content
+    margin: 0 12px 0 0
+    font-size: 24px
+  .rating-product
+    margin: 0
+  .text-product
+    font-size: 18px
+  .article
+    margin: 15px 0 0
+  .price-wrapper
+    width: 100%
+    margin: 30px 0 40px
+  .new-price
+    font-size: 36px
+  .old-price
+    font-size: 24px
+    margin: auto 0 5px 10px
+  .sale-price
+    font-size: 18px
+    margin: 0 0 0 5px
+  .amount
+    margin: 0
+  .number-orders
+    width: 100%
+    margin: 0 0 30px
+
+.btn-buy
+  max-width: 270px
+
+.product-description__body
+  margin: 30px 0 0
+  width: 100%
+
+.list-characteristics
+  width: 100%
+  color: #444444
+  li
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 10px 0
+    border-top: 1px solid #CFCFCF
+    &:first-child
+      border: none
+  p
+
+    font-weight: bold
+
+.characteristics-val
+  max-width: 270px
+  text-align: right
+  width: 100%
+
+.load-more
+  border-bottom: 1px dashed $accent
+  width: fit-content
+
+//compatibility
+.compatibility
+  h2
+    margin: 0 auto 50px
+
+.list-sorting
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: center
+  flex-wrap: wrap
+  li
+    margin: 0 10px 9px 0
+    &:last-child
+      margin-right: 0
+    a
+      border: 1.5px solid #3C3CF1
+        radius: 15px
+      background: #fff
+      padding: 8.5px 20px
+      color: $accent
+      text-align: center
+      justify-content: center
+      display: flex
+      align-items: center
+      &:hover, &:focus
+        background: $accent
+        color: #fff
+
+.compatibility-content
+  margin: 14px 0 0
+  width: 100%
+
+.list-compatibility
+  color: #444444
+  li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    a
+      position: relative
+      color: #444444
+      padding: 0 0 0 25px
+      &:before
+        content: '+'
+        position: absolute
+        left: 0
+        top: -5px
+        line-height: 28px
+        color: $accent
+        width: 15px
+        height: 28px
+        font-size: 24px
+        transition: .3s ease
+    .open
+      &:before
+        content: '-'
+
+.list-compatibility__sub
+  padding: 10px 0 0 55px
+  display: none
+
+.add-rating
+  display: flex
+  align-items: center
+  margin: 0 0 30px
+  flex-wrap: wrap
+  font-size: 20px
+  font-weight: bold
+
+.add-rating-list
+  margin: 0 0 0 10px
+  li
+    width: 32px
+    height: 32px
+
+.form-reviews
+  label
+    margin: 0 0 20px
+  textarea
+    height: 110px
+    padding: 13px 16px
+  button
+    max-width: none
+  .add-rating
+    label
+      margin: 0
+
+.all-rating
+  margin: 0 0 40px
+  .list-rating
+    li
+      width: 32px
+      height: 32px
+
+.reviews-section
+  .reviews-box
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+//faq
+.faq
+  h2
+    margin: 0 auto 50px
+
+.btn-collapse
+  width: 100%
+  margin: 0 0 20px
+  max-width: none
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16)
+  background: #fff
+  border: 1px solid #E8E8E8
+    radius: 25px
+  padding: 5px 5px 5px 30px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #171717
+  font-size: 18px
+  font-weight: normal
+  &__icon
+    background: #444444
+    transform: rotate(180deg)
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: 40px
+    height: 40px
+
+    fill: none
+    stroke: #fff
+    .svg-icon
+      width: 8px
+      height: 16px
+  &:hover, &:focus
+    background: #fff
+    color: #171717
+
+.collapsed
+  .btn-collapse__icon
+    transform: none
+    background: $accent
+
+.collapse-content
+  position: relative
+  .card-body
+    position: absolute
+    border: none
+      radius: 0
+    padding: 0
+
+.payments-methods
+  padding: 0 0 80px
+
+.payments-methods-box
+  h3
+    font-weight: bold
+    font-size: 26px
+    margin: 0 0 50px
+
+.list-pay
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    height: 45px
+    padding: 0 10px
+    max-width: 145px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+
+@import "media"
+// Всегда в конце

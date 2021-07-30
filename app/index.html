@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Motoroil.az</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/jQuery.countdownTimer.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="top-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sale-title">
+          <h3>GET 31% OFF YOUR PURCHASE</h3>
+          <p>DON’T MISS</p>
+          <div class="countdown-time">08:52:68</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn-close__line">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </a>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap">
+        <div class="mobile-menu">
+          <a href="#" class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="mobile-menu-modal">
+            <ul class="mobile-menu-list">
+              <li><a href="#" data-toggle="modal" data-target="#signModal">Sign in</a></li>
+              <li><a href="#">Favorite</a></li>
+              <li><a href="#">Cart</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="Enter the part number or name"></label>
+          <a href="#" class="links-accent">Example</a>
+          <button type="submit" class="form-search__btn">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <a href="#" class="header-links favorite-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#heart"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="header-links basket-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <!--          <span class="basket-val">9</span>-->
+        </a>
+
+        <a href="#" class="btn btn-accent btn-sign" data-toggle="modal" data-target="#signModal">Sign in</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form method="post" class="form-filter">
+          <h3>Select engine oil requirements</h3>
+          <div class="form-wrapper">
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="SAE viscosity grade">SAE viscosity grade</option>
+                <option value="All">All</option>
+                <option value="SAE 0W-20">SAE 0W-20</option>
+                <option value="SAE 0W-50">SAE 0W-50</option>
+                <option value="SAE 5W-30">SAE 5W-30</option>
+                <option value="SAE 5W-40">SAE 5W-40</option>
+                <option value="SAE 10W-30">SAE 10W-30</option>
+                <option value="SAE 10W-40">SAE 10W-40</option>
+                <option value="SAE 15W-50">SAE 15W-50</option>
+                <option value="SAE 20W-50">SAE 20W-50</option>
+              </select>
+            </label>
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Brand">Brand</option>
+                <option value="Brand">Brand</option>
+                <option value="Brand">Brand</option>
+                <option value="Brand">Brand</option>
+                <option value="Brand">Brand</option>
+              </select>
+            </label>
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="OEM approval">OEM approval</option>
+                <option value="OEM approval">OEM approval</option>
+                <option value="OEM approval">OEM approval</option>
+                <option value="OEM approval">OEM approval</option>
+              </select>
+            </label>
+
+
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Specification">Specification</option>
+                <option value="Specification">Specification</option>
+                <option value="Specification">Specification</option>
+                <option value="Specification">Specification</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-accent">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-12">
+        <form method="post" class="form-filter">
+          <h3>Select engine oil requirements</h3>
+          <div class="form-wrapper">
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Select make">Select make</option>
+                <option value="Select make">Select make</option>
+                <option value="Select make">Select make</option>
+                <option value="Select make">Select make</option>
+              </select>
+            </label>
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Select model">Select model</option>
+                <option value="Select model">Select model</option>
+                <option value="Select model">Select model</option>
+              </select>
+            </label>
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Select engine">Select engine</option>
+                <option value="Select engine">Select engine</option>
+                <option value="Select engine">Select engine</option>
+                <option value="Select engine">Select engine</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-accent">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<section class="popular-brands">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Popular motor oil brands</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="popular-slider w100">
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/castrol.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/shell.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/mannol.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/motul.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/mobil.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/liqui.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/elf.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/total.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/valvoline.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="brand-slide"><img src="img/castrol.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-category">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Search by auto oil viscosity</h2>
+      </div>
+      <div class="col-12">
+        <ul class="search-category-list">
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 5W-30</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 10W-40</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 5W-40</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 0W-30</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 15W-40</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 0W-40</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 10W-60</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 10W-30</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 20W-50</span>
+          </a></li>
+          <li><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+            <span class="search-category-item__title">SAE 0W-20</span>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="top-products">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Top automobile oil deals</h2>
+        <div class="subtitle"><p>Buy motor oil and lubricants for your car cheap online</p></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product1.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Castrol edge, M engine oil</a>
+            <div class="article">15BC8E</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 39,58</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product2.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Fanfaro O.E.M. Line, 6719 Longli...</a>
+            <div class="article">FF6719-5</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 16,09</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product3.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Shell Helix, Ultra ECT C3 Engine...</a>
+            <div class="article">550042826</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 27,60</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product1.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Castrol edge, LL engine oil</a>
+            <div class="article">15669E</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 47,99</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product1.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Castrol edge, M engine oil</a>
+            <div class="article">15BC8E</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 39,58</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product2.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Fanfaro O.E.M. Line, 6719 Longli...</a>
+            <div class="article">FF6719-5</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 16,09</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product3.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Shell Helix, Ultra ECT C3 Engine...</a>
+            <div class="article">550042826</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 27,60</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+        <div class="card-product">
+          <ul class="label-product">
+            <li><a href="#" class="val-product">1L</a></li>
+            <li><a href="#" class="btn-favorite">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <a href="product.html" class="card-product__img"><img src="img/product1.png" alt=""></a>
+          <div class="card-product__body">
+            <a href="product.html" class="card-product__title">Castrol edge, LL engine oil</a>
+            <div class="article">15669E</div>
+          </div>
+          <div class="card-product__footer">
+            <div class="price-wrapper">
+              <div class="new-price">£ 47,99</div>
+              <div class="sale-price">-32%</div>
+            </div>
+            <a href="#" class="btn btn-border add-card">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="top-car">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Engine oil for top car maker</h2>
+      </div>
+      <div class="col-12">
+        <div class="top-car-slider w100">
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/mercedes.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/bmw.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/volkswagen.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/ford.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/audi.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/peugeot.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/nissan.png" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="car-logo"><img src="img/mercedes.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Reviews and ratings</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-30">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__img"><img src="img/reviews-img1.png" alt=""></div>
+            <div class="reviews-box__title">
+              <h3>Castrol edge, M engine oil</h3>
+              <div class="rating-product">
+                <ul class="list-rating">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="star0">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="rating-val">2 reviews</div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>Febi bilstein engine oil - second service using this now and always lubricated my engine just how it
+              should! Says to avoid contact with this oil and majority of the others don’t I’m assuming this has some
+              special additive added to it, anything that helps the engine! Also Priced brilliantly! </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-30">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__img"><img src="img/reviews-img2.png" alt=""></div>
+            <div class="reviews-box__title">
+              <h3>MOTUL Engine Oil</h3>
+              <div class="rating-product">
+                <ul class="list-rating">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="star0">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="rating-val">1 reviews</div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>I really recommend it. I used for Audi A3 3.2 V6, same Motor as the R32 Golf. No oil consumption, great
+              motorsound, oilchange every 10k km. 220k km with the original chain. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-30">
+        <div class="reviews-box">
+          <div class="reviews-box__head">
+            <div class="reviews-box__img"><img src="img/reviews-img3.png" alt=""></div>
+            <div class="reviews-box__title">
+              <h3>MOTUL Engine Oil</h3>
+              <div class="rating-product">
+                <ul class="list-rating">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="star0">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="rating-val">4 reviews</div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-box__body">
+            <p>I really recommend it. I used it for Audi A3 3.2 V6, same Motor as R32 Golf. No Oil loss, great Sound. I
+              did not have Oil consumption, great Motorsound, Oilchange every 10k km. 220k km with the original
+              chain. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="seo-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="box-text">
+          <div class="text">
+            <p>Engine oil is used to lubricate the moving parts of the engine. Lubricants reduce the likelihood of quick
+              abrasive wear and corrosion, and wash away dirt.</p>
+          </div>
+          <div class="text">
+            <h3>Types of engine oil</h3>
+            <p>By season of use and viscosity:</p>
+            <ul class="list-dots">
+              <li>Summer grade oils;
+              </li>
+              <li>Winter grade oils. According to the SAE J300 classification, these are marked with the letter W;
+              </li>
+              <li>All-season oils.</li>
+            </ul>
+            <p>According to the SAE standard, the lubricant’s name may contain one or two numbers. The first indicates
+              the
+              minimum operating temperature of the fluid. The second stands for the viscosity at high temperatures. The
+              higher the number, the thicker the lubricant.</p>
+            <p>By engine type:</p>
+            <ul class="list-dots">
+              <li>for petrol engines - according to the API classification, these are marked with the letter S;
+              </li>
+              <li>for diesel engines - these have the letter C;
+              </li>
+              <li>universal oils - these can be used both in petrol and diesel engines, their marking contains both
+                letters.
+              </li>
+            </ul>
+            <p>There are also several specific symbols, for example:</p>
+            <ul class="list-dots">
+              <li>SF - for engine oils that were used in passenger cars produced in the 1980s;
+              </li>
+              <li>SG - in commercial vehicles of the same period;
+              </li>
+              <li>SH - in engines manufactured after 1994;
+              </li>
+              <li>SL - in multi-valve turbocharged engines manufactured after 2000.</li>
+            </ul>
+            <p>By base stock:</p>
+            <ul class="list-dots">
+              <li>Petroleum oils are produced by refining crude oil. They are inexpensive. However, they are prone to
+                evaporation, and thickening in cold weather. Their use may lead to sludge build-up in case of engine
+                overheating.
+              </li>
+              <li>Semi-synthetic oils are produced by adding synthetic additives to the petroleum base - one third of
+                the
+                total amount. They are frost-resistant, but gradually lose their viscosity during operation.
+                Decomposition
+                products can be deposited inside the engine.
+              </li>
+              <li>Synthetic oils are made from hydrocarbons by chemical reaction. They protect the engine from
+                corrosion,
+                and have a long service life, but are expensive.
+              </li>
+              <li>Hydrocracked oils are produced by modifying crude oil at the molecular level. They are available at a
+                low price, but at the same time they quickly lose their properties and cannot withstand rapid
+                temperature
+                changes.
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h3>Operation tips</h3>
+            <p>On average, the lifespan of engine oil is 10,000–15,000 km, and with a significant load on the engine can
+              be estimated to be about 8,000–6,000 km. In addition, it is recommended to change it at least once a year,
+              even if you haven’t used your car. Every 1,000 km, you should check the level and condition of the
+              lubricant with the oil dipstick. When changing the oil, do not mix lubricants of different types and
+              brands. It’s important to only use the one recommended by the car manufacturer. Never overfill your
+              engine.</p>
+          </div>
+          <div class="text">
+            <h3>Causes and signs of engine oil degradation</h3>
+            <ul class="list-dots">
+              <li>Mixing lubricants of different types and grades leads to the formation of insoluble deposits on the
+                engine walls. You can notice this on the oil dipstick during inspection.
+              </li>
+              <li>Some fluids lose their properties as a result of being exposed to high or low temperatures, or
+                antifreeze leaking into the lubrication system. You’ll notice a change in the consistency or
+                emulsification when checking with the dipstick.
+              </li>
+              <li>As a result of long use, the fluid loses its properties, which is indicated by a change in its
+                consistency and colour.
+              </li>
+              <li>Prolonged engine idling negatively affects the lubricant quality. The replacement interval should be
+                reduced in this case.
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h3>How to change your engine oil</h3>
+            <ul class="list-decimal">
+              <li>Park the vehicle on a level surface and allow the engine to cool down for 10 minutes.
+              </li>
+              <li>Unscrew the drain plug of the engine oil pan.
+              </li>
+              <li>Drain the waste product into a prepared container.
+              </li>
+              <li>When changing the oil, be sure to install a new oil filter. A clogged one cannot work efficiently.
+              </li>
+              <li>Before installing the filter, pour about 200 ml of oil into it, and use some oil to lubricate the
+                filter O-ring.
+              </li>
+              <li>First, pour in about 80% of the fluid amount prescribed by the car manufacturer. Then add the rest
+                gradually, about 150 ml at a time, and keep checking the level with the dipstick. The top of the oil
+                mark should be between the “Min” and “Max” lines.
+              </li>
+              <li>Inspect all seals and gaskets and the oil cap. Replace them if necessary.</li>
+            </ul>
+          </div>
+          <div class="text">
+            <h3>Professional help from AUTODOC</h3>
+            <p>You can buy engine oils and service fluids and get a great deal at AUTODOC. Thanks to our wide range of
+              components and competent support team, it will only take you a couple of minutes to select products that
+              fit your vehicle. Delivery is carried out within the shortest time possible. Shopping with us is always
+              convenient, fast and inexpensive!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="advantages">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+          <h4>More than <br> 2,000 car oils</h4>
+          <p>The biggest assortment of products at the best prices</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+          <h4>14 days <br> returns policy</h4>
+          <p>No risk! You can return a purchased item within 14 days after purchase and get your money back.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+          <h4>Fast <br> delivery</h4>
+          <p>Your order will be delivered by a reliable parcel service. For purchases from £ 140, no shipping costs
+            apply.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-30">
+        <div class="advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+          <h4>Best prices on engine oil for your car</h4>
+          <p>The biggest assortment of products at the best prices</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-5 col-lg-3">
+        <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+      </div>
+      <div class="col-12 col-sm-7 col-lg-2 order-lg-1">
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="subscribe-box">
+          <h4>Subscribe and save today!</h4>
+          <form method="post" class="form-subscribe">
+            <label><input type="text" placeholder="E-mail" name="mail" required></label>
+            <button type="submit" class="btn btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>About autodoc</h4>
+          <ul class="footer-menu">
+            <li><a href="#">About us
+            </a></li>
+            <li><a href="#">Company Information
+            </a></li>
+            <li><a href="#">Bonus programme
+            </a></li>
+            <li><a href="#">Partnership
+            </a></li>
+            <li><a href="#">Press
+            </a></li>
+            <li><a href="#">AUTODOC App
+            </a></li>
+            <li><a href="#">AUTODOC Partners
+            </a></li>
+            <li><a href="#">AUTODOC Classifieds</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>Help & support</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Help Center
+            </a></li>
+            <li><a href="#">AUTODOC CLUB
+            </a></li>
+            <li><a href="#">Blog
+            </a></li>
+            <li><a href="#">Car repair manuals and video tutorials
+            </a></li>
+            <li><a href="#">Terms and Conditions
+            </a></li>
+            <li><a href="#">Right of withdrawal
+            </a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>Customer service</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Payment
+            </a></li>
+            <li><a href="#">Delivery
+            </a></li>
+            <li><a href="#">Contact Us
+            </a></li>
+            <li><a href="#">Returns & refunds
+            </a></li>
+            <li><a href="#">Core exchange</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>Top products</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Lighting
+            </a></li>
+            <li><a href="#">Shock absorber
+            </a></li>
+            <li><a href="#">Clutch kit
+            </a></li>
+            <li><a href="#">Suspension arm
+            </a></li>
+            <li><a href="#">Wheel bearing
+            </a></li>
+            <li><a href="#">Car care & cleaning products
+            </a></li>
+            <li><a href="#">Shop by make
+            </a></li>
+            <li><a href="#">Shop by model
+            </a></li>
+            <li><a href="#">Search by car brands
+            </a></li>
+            <li><a href="#">Car parts brands</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="signModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title">Sign in</h5>
+        <div class="subtitle">Enter your e-mail address and password</div>
+
+        <form method="post" class="form-modal">
+          <label>
+            <input type="text" placeholder="E-mail" required name="mail">
+          </label>
+
+          <label class="label-pass">
+            <input type="text" placeholder="Password" required name="password">
+            <span class="view-pass"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></span>
+          </label>
+
+          <div class="line-wrapper">
+            <label class="checkbox">
+              <input type="checkbox" class="inp-check" checked>
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Remember me</span>
+            </label>
+
+            <a href="#" class="color-accent" data-dismiss="modal" data-toggle="modal" data-target="#passwordModal">Forgot
+              password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Sign in</button>
+
+          <div class="agreement">If you do not have an account on Autodoc, <a href="#" class="color-accent d-inline"
+                                                                              data-dismiss="close" data-toggle="modal"
+                                                                              data-target="#signNewModal">SIGN UP</a>
+            now
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signNewModal" tabindex="-1" aria-labelledby="signNewModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title">Log in as a new client</h5>
+        <div class="subtitle">One step sign up</div>
+
+        <form method="post" class="form-modal">
+          <label>
+            <input type="text" placeholder="Your name" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="E-mail" required name="mail">
+          </label>
+
+          <label class="label-pass">
+            <input type="text" placeholder="Password" required name="password">
+            <span class="view-pass"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></span>
+          </label>
+
+
+          <button type="submit" class="btn btn-accent">Sign in</button>
+
+          <div class="agreement">Please note our <a href="#" class="color-accent d-inline">Privacy Policy</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title">Forgot your password?</h5>
+        <div class="subtitle">Enter your e-mail address. In a few seconds you will
+          receive an e-mail with a new password
+        </div>
+
+        <form method="post" class="form-modal">
+          <label>
+            <input type="text" placeholder="E-mail" required name="mail">
+          </label>
+
+          <button type="submit" class="btn btn-accent">Send</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/jQuery.countdownTimer.js"></script>
+<script src="js/jQuery.countdownTimer-ru.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

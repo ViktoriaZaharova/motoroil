@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Motoroil.az</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/jQuery.countdownTimer.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="top-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sale-title">
+          <h3>GET 31% OFF YOUR PURCHASE</h3>
+          <p>DON’T MISS</p>
+          <div class="countdown-time">08:52:68</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn-close__line">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </a>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap">
+        <div class="mobile-menu">
+          <a href="#" class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="mobile-menu-modal">
+            <ul class="mobile-menu-list">
+              <li><a href="#" data-toggle="modal" data-target="#signModal">Sign in</a></li>
+              <li><a href="#">Favorite</a></li>
+              <li><a href="#">Cart</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="Enter the part number or name"></label>
+          <a href="#" class="links-accent">Example</a>
+          <button type="submit" class="form-search__btn">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <a href="#" class="header-links favorite-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#heart"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="header-links basket-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <!--          <span class="basket-val">9</span>-->
+        </a>
+
+        <a href="#" class="btn btn-accent btn-sign" data-toggle="modal" data-target="#signModal">Sign in</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="sidebar">
+          <form method="post" class="form-sidebar">
+            <div class="form-filter">
+              <h3>Select engine oil requirements</h3>
+              <div class="form-wrapper">
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="SAE viscosity grade">SAE viscosity grade</option>
+                    <option value="All">All</option>
+                    <option value="SAE 0W-20">SAE 0W-20</option>
+                    <option value="SAE 0W-50">SAE 0W-50</option>
+                    <option value="SAE 5W-30">SAE 5W-30</option>
+                    <option value="SAE 5W-40">SAE 5W-40</option>
+                    <option value="SAE 10W-30">SAE 10W-30</option>
+                    <option value="SAE 10W-40">SAE 10W-40</option>
+                    <option value="SAE 15W-50">SAE 15W-50</option>
+                    <option value="SAE 20W-50">SAE 20W-50</option>
+                  </select>
+                </label>
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                  </select>
+                </label>
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="OEM approval">OEM approval</option>
+                    <option value="OEM approval">OEM approval</option>
+                    <option value="OEM approval">OEM approval</option>
+                    <option value="OEM approval">OEM approval</option>
+                  </select>
+                </label>
+
+
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="Specification">Specification</option>
+                    <option value="Specification">Specification</option>
+                    <option value="Specification">Specification</option>
+                    <option value="Specification">Specification</option>
+                  </select>
+                </label>
+                <button type="button" class="btn btn-accent">Search</button>
+              </div>
+            </div>
+            <div class="form-filter">
+              <h3>Car oil finder. Select your vehicle</h3>
+              <div class="form-wrapper">
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="Select make">Select make</option>
+                    <option value="All">All</option>
+                    <option value="SAE 0W-20">SAE 0W-20</option>
+                    <option value="SAE 0W-50">SAE 0W-50</option>
+                    <option value="SAE 5W-30">SAE 5W-30</option>
+                    <option value="SAE 5W-40">SAE 5W-40</option>
+                    <option value="SAE 10W-30">SAE 10W-30</option>
+                    <option value="SAE 10W-40">SAE 10W-40</option>
+                    <option value="SAE 15W-50">SAE 15W-50</option>
+                    <option value="SAE 20W-50">SAE 20W-50</option>
+                  </select>
+                </label>
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="Select model">Select model</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                    <option value="Brand">Brand</option>
+                  </select>
+                </label>
+                <label>
+                  <select name="select" class="js-example-basic-single">
+                    <option value="Select engine">Select engine</option>
+                    <option value="OEM approval">OEM approval</option>
+                    <option value="OEM approval">OEM approval</option>
+                    <option value="OEM approval">OEM approval</option>
+                  </select>
+                </label>
+                <button type="button" class="btn btn-accent">Search</button>
+              </div>
+            </div>
+            <div class="form-filter">
+              <h3>Content [litre]</h3>
+              <ul class="list-checkbox">
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">1L</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">2L</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-filter">
+              <h3>Oem approval</h3>
+              <ul class="list-checkbox">
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">BMW Longlife-04</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">DEXOS 2</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">MB 226.51</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">MB 229.31</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">MB 229.51</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Porsche C30</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Renault RN0700</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Renault RN0720</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">VW 502 00</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">VW 504 00</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">BMW Longlife-04</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">DEXOS 2</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">MB 226.51</span>
+                  </label>
+                </li>
+                <li>
+              </ul>
+            </div>
+            <div class="form-filter">
+              <h3>Designations</h3>
+              <ul class="list-checkbox">
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA A1/B1</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA A3/B3</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA A3/B4</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA A5/B5</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA C2</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA C3</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">ACEA C4</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">API CF</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">API SM</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">API SN</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">API SM</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input type="checkbox" class="inp-check">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">API SM</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <a href="#" class="btn btn-accent btn-sidebar">Show filter</a>
+      </div>
+
+      <div class="col-12 col-lg-9">
+
+        <section class="sae">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>SAE viscosity grade</h2>
+              </div>
+              <div class="col-12">
+                <div class="sae-slider w-100">
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 5W-30</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 10W-40</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 5W-40</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 0W-30</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 15W-40</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 0W-40</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 10W-60</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 10W-30</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 20W-50</span>
+                  </a></div>
+                  <div class="slide"><a href="#" class="search-category-item">
+            <span class="search-category-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#oil"></use></svg></span>
+                    <span class="search-category-item__title">SAE 0W-20</span>
+                  </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="motor-brands">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Motor oil brands</h2>
+              </div>
+              <div class="col-12">
+                <div class="motor-brands-slider w-100">
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/eneos.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/shell.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/mannol.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/castrol.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/motul.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/mobil.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/liqui.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/elf.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/total.png" alt=""></a>
+                  </div>
+                  <div class="slide">
+                    <a href="#" class="brand-slide"><img src="img/valvoline.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="catalog">
+          <div class="row">
+            <div class="col-12">
+              <div class="result-search">7 items</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <a href="#" class="label-item">filter hədiyyə</a>
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product4.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Performance Racing, GP 4T</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63582441</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">0 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 16,85</div>
+                    <div class="old-price">£ 39,58</div>
+                    <div class="sale-price">-28%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product5.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Premium, Hyper</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63580690</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">1 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 36,37</div>
+                    <div class="old-price">£ 50,51</div>
+                    <div class="sale-price">-28%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product6.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Premium, Hyper Multi</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63581413</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">0 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 9,48</div>
+                    <div class="old-price">£ 13,54</div>
+                    <div class="sale-price">-30%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product4.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Performance Racing, GP 4T</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63582441</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">0 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 16,85</div>
+                    <div class="old-price">£ 39,58</div>
+                    <div class="sale-price">-28%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product5.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Premium, Hyper</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63580690</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">1 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 36,37</div>
+                    <div class="old-price">£ 50,51</div>
+                    <div class="sale-price">-28%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product6.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Premium, Hyper Multi</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63581413</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">0 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 9,48</div>
+                    <div class="old-price">£ 13,54</div>
+                    <div class="sale-price">-30%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30">
+              <div class="card-product">
+                <ul class="label-product">
+                  <li><a href="#" class="val-product">1L</a></li>
+                  <li><a href="#" class="btn-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+                <a href="product.html" class="card-product__img"><img src="img/product4.png" alt=""></a>
+                <div class="card-product__body">
+                  <a href="product.html" class="card-product__title">ENEOS Performance Racing, GP 4T</a>
+                  <div class="text-product">5W-30, Synthetic Oil</div>
+                  <div class="article">63582441</div>
+                  <div class="rating-product">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <div class="rating-val">0 reviews</div>
+                  </div>
+                </div>
+                <div class="card-product__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">£ 16,85</div>
+                    <div class="old-price">£ 39,58</div>
+                    <div class="sale-price">-28%</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-accent btn-add-card">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-5 col-lg-3">
+        <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+      </div>
+      <div class="col-12 col-sm-7 col-lg-2 order-lg-1">
+        <ul class="list-social">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="subscribe-box">
+          <h4>Subscribe and save today!</h4>
+          <form method="post" class="form-subscribe">
+            <label><input type="text" placeholder="E-mail" name="mail" required></label>
+            <button type="submit" class="btn btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>About autodoc</h4>
+          <ul class="footer-menu">
+            <li><a href="#">About us
+            </a></li>
+            <li><a href="#">Company Information
+            </a></li>
+            <li><a href="#">Bonus programme
+            </a></li>
+            <li><a href="#">Partnership
+            </a></li>
+            <li><a href="#">Press
+            </a></li>
+            <li><a href="#">AUTODOC App
+            </a></li>
+            <li><a href="#">AUTODOC Partners
+            </a></li>
+            <li><a href="#">AUTODOC Classifieds</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>Help & support</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Help Center
+            </a></li>
+            <li><a href="#">AUTODOC CLUB
+            </a></li>
+            <li><a href="#">Blog
+            </a></li>
+            <li><a href="#">Car repair manuals and video tutorials
+            </a></li>
+            <li><a href="#">Terms and Conditions
+            </a></li>
+            <li><a href="#">Right of withdrawal
+            </a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>Customer service</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Payment
+            </a></li>
+            <li><a href="#">Delivery
+            </a></li>
+            <li><a href="#">Contact Us
+            </a></li>
+            <li><a href="#">Returns & refunds
+            </a></li>
+            <li><a href="#">Core exchange</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="footer-box">
+          <h4>Top products</h4>
+          <ul class="footer-menu">
+            <li><a href="#">Lighting
+            </a></li>
+            <li><a href="#">Shock absorber
+            </a></li>
+            <li><a href="#">Clutch kit
+            </a></li>
+            <li><a href="#">Suspension arm
+            </a></li>
+            <li><a href="#">Wheel bearing
+            </a></li>
+            <li><a href="#">Car care & cleaning products
+            </a></li>
+            <li><a href="#">Shop by make
+            </a></li>
+            <li><a href="#">Shop by model
+            </a></li>
+            <li><a href="#">Search by car brands
+            </a></li>
+            <li><a href="#">Car parts brands</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="signModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title">Sign in</h5>
+        <div class="subtitle">Enter your e-mail address and password</div>
+
+        <form method="post" class="form-modal">
+          <label>
+            <input type="text" placeholder="E-mail" required name="mail">
+          </label>
+
+          <label class="label-pass">
+            <input type="text" placeholder="Password" required name="password">
+            <span class="view-pass"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></span>
+          </label>
+
+          <div class="line-wrapper">
+            <label class="checkbox">
+              <input type="checkbox" class="inp-check" checked>
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">Remember me</span>
+            </label>
+
+            <a href="#" class="color-accent" data-dismiss="modal" data-toggle="modal" data-target="#passwordModal">Forgot
+              password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Sign in</button>
+
+          <div class="agreement">If you do not have an account on Autodoc, <a href="#" class="color-accent d-inline"
+                                                                              data-dismiss="close" data-toggle="modal"
+                                                                              data-target="#signNewModal">SIGN UP</a>
+            now
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signNewModal" tabindex="-1" aria-labelledby="signNewModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title">Log in as a new client</h5>
+        <div class="subtitle">One step sign up</div>
+
+        <form method="post" class="form-modal">
+          <label>
+            <input type="text" placeholder="Your name" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="E-mail" required name="mail">
+          </label>
+
+          <label class="label-pass">
+            <input type="text" placeholder="Password" required name="password">
+            <span class="view-pass"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view"></use></svg></span>
+          </label>
+
+
+          <button type="submit" class="btn btn-accent">Sign in</button>
+
+          <div class="agreement">Please note our <a href="#" class="color-accent d-inline">Privacy Policy</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="modal-title">Forgot your password?</h5>
+        <div class="subtitle">Enter your e-mail address. In a few seconds you will
+          receive an e-mail with a new password
+        </div>
+
+        <form method="post" class="form-modal">
+          <label>
+            <input type="text" placeholder="E-mail" required name="mail">
+          </label>
+
+          <button type="submit" class="btn btn-accent">Send</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/jQuery.countdownTimer.js"></script>
+<script src="js/jQuery.countdownTimer-ru.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
