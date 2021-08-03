@@ -53,54 +53,80 @@
 </div>
 
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap">
-        <div class="mobile-menu">
-          <a href="#" class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <div class="mobile-menu-modal">
-            <ul class="mobile-menu-list">
-              <li><a href="#" data-toggle="modal" data-target="#signModal">Sign in</a></li>
-              <li><a href="#">Favorite</a></li>
-              <li><a href="#">Cart</a></li>
-            </ul>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap">
+          <div class="mobile-menu">
+            <a href="#" class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <div class="mobile-menu-modal">
+              <ul class="mobile-menu-list">
+                <li><a href="#" data-toggle="modal" data-target="#signModal">Sign in</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+
+              <ul class="menu">
+                <li><a href="#">Filter</a></li>
+                <li><a href="#">Transmission</a></li>
+                <li><a href="#">Qatqilar</a></li>
+                <li><a href="#">Air systems</a></li>
+                <li><a href="#">Filter</a></li>
+              </ul>
+            </div>
+
           </div>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
-        </div>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Enter the part number or name"></label>
+            <a href="#" class="links-accent">Example</a>
+            <button type="submit" class="form-search__btn">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
 
-        <form method="post" class="form-search">
-          <label><input type="text" placeholder="Enter the part number or name"></label>
-          <a href="#" class="links-accent">Example</a>
-          <button type="submit" class="form-search__btn">
+          <a href="#" class="header-links favorite-links">
             <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
+              <use xlink:href="img/sprite.svg#heart"></use>
             </svg>
-          </button>
-        </form>
+          </a>
 
-        <a href="#" class="header-links favorite-links">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#heart"></use>
-          </svg>
-        </a>
+          <a href="#" class="header-links basket-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+            <!--          <span class="basket-val">9</span>-->
+          </a>
 
-        <a href="#" class="header-links basket-links">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#basket"></use>
-          </svg>
-          <!--          <span class="basket-val">9</span>-->
-        </a>
-
-        <a href="#" class="btn btn-accent btn-sign" data-toggle="modal" data-target="#signModal">Sign in</a>
+          <a href="#" class="btn btn-accent btn-sign" data-toggle="modal" data-target="#signModal">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="menu">
+            <li><a href="#">Filter</a></li>
+            <li><a href="#">Transmission</a></li>
+            <li><a href="#">Qatqilar</a></li>
+            <li><a href="#">Air systems</a></li>
+            <li><a href="#">Filter</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </header>
+
 
 <div class="content-wrapper basket-wrapper">
   <div class="container">
@@ -123,21 +149,6 @@
             </div>
 
             <div class="form-row">
-              <label class="w75">
-                <input type="text" placeholder="Street" name="street">
-              </label>
-              <label class="w25">
-                <input type="text" placeholder="House N" name="house_num">
-              </label>
-            </div>
-
-            <div class="form-row">
-              <label class="w25">
-                <input type="text" placeholder="Postcode" name="code">
-              </label>
-              <label class="w35">
-                <input type="text" placeholder="City" name="city">
-              </label>
               <label class="w35">
                 <select name="select" class="js-example-basic-single">
                   <option value="Country">Country</option>
@@ -152,16 +163,15 @@
                   <option value="SAE 20W-50">SAE 20W-50</option>
                 </select>
               </label>
+
+              <label class="w65">
+                <input type="text" placeholder="Street" name="street">
+              </label>
+
             </div>
 
             <label>
               <input type="text" placeholder="Phone" name="phone">
-            </label>
-
-            <label class="checkbox">
-              <input type="checkbox" class="inp-check" checked>
-              <span class="checkbox-custom"></span>
-              <span class="checkbox-text">Shipping and billing addresses are the same</span>
             </label>
 
           </div>

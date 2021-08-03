@@ -53,50 +53,75 @@
 </div>
 
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap">
-        <div class="mobile-menu">
-          <a href="#" class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <div class="mobile-menu-modal">
-            <ul class="mobile-menu-list">
-              <li><a href="#" data-toggle="modal" data-target="#signModal">Sign in</a></li>
-              <li><a href="#">Favorite</a></li>
-              <li><a href="#">Cart</a></li>
-            </ul>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap">
+          <div class="mobile-menu">
+            <a href="#" class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <div class="mobile-menu-modal">
+              <ul class="mobile-menu-list">
+                <li><a href="#" data-toggle="modal" data-target="#signModal">Sign in</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+
+              <ul class="menu">
+                <li><a href="#">Filter</a></li>
+                <li><a href="#">Transmission</a></li>
+                <li><a href="#">Qatqilar</a></li>
+                <li><a href="#">Air systems</a></li>
+                <li><a href="#">Filter</a></li>
+              </ul>
+            </div>
+
           </div>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
-        </div>
-        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Enter the part number or name"></label>
+            <a href="#" class="links-accent">Example</a>
+            <button type="submit" class="form-search__btn">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
 
-        <form method="post" class="form-search">
-          <label><input type="text" placeholder="Enter the part number or name"></label>
-          <a href="#" class="links-accent">Example</a>
-          <button type="submit" class="form-search__btn">
+          <a href="#" class="header-links favorite-links">
             <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
+              <use xlink:href="img/sprite.svg#heart"></use>
             </svg>
-          </button>
-        </form>
+          </a>
 
-        <a href="#" class="header-links favorite-links">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#heart"></use>
-          </svg>
-        </a>
+          <a href="#" class="header-links basket-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+            <!--          <span class="basket-val">9</span>-->
+          </a>
 
-        <a href="#" class="header-links basket-links">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#basket"></use>
-          </svg>
-          <!--          <span class="basket-val">9</span>-->
-        </a>
-
-        <a href="#" class="btn btn-accent btn-sign" data-toggle="modal" data-target="#signModal">Sign in</a>
+          <a href="#" class="btn btn-accent btn-sign" data-toggle="modal" data-target="#signModal">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="menu">
+            <li><a href="#">Filter</a></li>
+            <li><a href="#">Transmission</a></li>
+            <li><a href="#">Qatqilar</a></li>
+            <li><a href="#">Air systems</a></li>
+            <li><a href="#">Filter</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -105,8 +130,80 @@
 <main class="home">
   <div class="container">
     <div class="row">
+      <div class="col-12 col-lg-4">
+        <form method="post" class="form-filter form-filter-default">
+          <h3>Select engine oil requirements</h3>
+          <div class="form-wrapper">
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Select make">Select make</option>
+                <option value="Select make">Select make</option>
+                <option value="Select make">Select make</option>
+                <option value="Select make">Select make</option>
+              </select>
+            </label>
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Select model">Select model</option>
+                <option value="Select model">Select model</option>
+                <option value="Select model">Select model</option>
+              </select>
+            </label>
+            <label>
+              <select name="select" class="js-example-basic-single">
+                <option value="Select engine">Select engine</option>
+                <option value="Select engine">Select engine</option>
+                <option value="Select engine">Select engine</option>
+                <option value="Select engine">Select engine</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-accent">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-12 col-lg-8 d-none d-lg-block">
+        <div class="home-banner w100">
+          <div class="slide">
+            <div class="home-banner-item">
+              <img src="img/bg-slide.jpg" alt="" class="home-banner-item__bg">
+              <div class="home-banner-item__title">Фильтры</div>
+              <div class="home-banner-item__text">
+                <ul class="list-dots">
+                  <li>Масляные фильтры от 2,34 €</li>
+                  <li>Воздушные фильтры от 2,34 €</li>
+                  <li>Топливные фильтры от 1,73 €</li>
+                </ul>
+              </div>
+
+              <a href="#" class="btn btn-accent">Выбрать</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="home-banner-item">
+              <img src="img/bg-slide.jpg" alt="" class="home-banner-item__bg">
+              <div class="home-banner-item__title">Масла</div>
+              <div class="home-banner-item__text">
+                <ul class="list-dots">
+                  <li>Масляные фильтры от 2,34 €</li>
+                  <li>Воздушные фильтры от 2,34 €</li>
+                  <li>Топливные фильтры от 1,73 €</li>
+                </ul>
+              </div>
+
+              <a href="#" class="btn btn-accent">Выбрать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-12">
-        <form method="post" class="form-filter">
+        <a href="#" class="links-details-filter">Подбор по спецификации</a>
+      </div>
+      <div class="col-12">
+        <form method="post" class="form-filter form-filter-details">
           <h3>Select engine oil requirements</h3>
           <div class="form-wrapper">
             <label>
@@ -148,38 +245,6 @@
                 <option value="Specification">Specification</option>
                 <option value="Specification">Specification</option>
                 <option value="Specification">Specification</option>
-              </select>
-            </label>
-            <button type="submit" class="btn btn-accent">Search</button>
-          </div>
-        </form>
-      </div>
-
-      <div class="col-12">
-        <form method="post" class="form-filter">
-          <h3>Select engine oil requirements</h3>
-          <div class="form-wrapper">
-            <label>
-              <select name="select" class="js-example-basic-single">
-                <option value="Select make">Select make</option>
-                <option value="Select make">Select make</option>
-                <option value="Select make">Select make</option>
-                <option value="Select make">Select make</option>
-              </select>
-            </label>
-            <label>
-              <select name="select" class="js-example-basic-single">
-                <option value="Select model">Select model</option>
-                <option value="Select model">Select model</option>
-                <option value="Select model">Select model</option>
-              </select>
-            </label>
-            <label>
-              <select name="select" class="js-example-basic-single">
-                <option value="Select engine">Select engine</option>
-                <option value="Select engine">Select engine</option>
-                <option value="Select engine">Select engine</option>
-                <option value="Select engine">Select engine</option>
               </select>
             </label>
             <button type="submit" class="btn btn-accent">Search</button>

@@ -322,8 +322,35 @@ h2
 
 header
   border-bottom: 1px solid #E5E5E5
-  padding: 20px 0
   margin: 0 0 40px
+
+.header-top
+  padding: 20px 0
+
+.header-bottom
+  width: 100%
+  border-top: 1px solid #E5E5E5
+
+.menu
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  font-weight: 500
+  li
+    flex: auto
+    border-right: 1px solid #E5E5E5
+    &:first-child
+      border-left: 1px solid #E5E5E5
+    a
+      text-align: center
+      padding: 10px 20px
+      color: #000
+      &:hover
+        background: $accent
+        color: #fff
+
+
 
 .btn-sign
   max-width: 120px
@@ -423,6 +450,49 @@ header
 
     select
       width: calc(100% - 15px)
+
+.form-filter-details
+  display: none
+  margin: 20px 0 0
+
+.form-filter-default
+  label, .btn
+    width: 100%
+
+.links-details-filter
+  color: $accent
+  font-size: 20px
+  border-bottom: 1px solid $accent
+  width: fit-content
+  margin: 20px 0 0
+
+.home-banner-item
+  position: relative
+  width: 100%
+  padding: 50px 30px
+  color: #fff
+  z-index: 1
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+  &__title
+    text-transform: uppercase
+    color: #fff
+    font-size: 22px
+    font-weight: bold
+    margin: 0 0 15px
+  &__text
+    background: rgba(#000,.5)
+    width: fit-content
+    padding: 15px
+    margin: 0 0 20px
+    li
+      margin: 0 0 10px
 
 .select2-container
   width: calc(100% - 15px) !important
@@ -1286,10 +1356,8 @@ footer
     margin: 0
     label
       width: calc(50% - 10px)
-    .w75
-      width: calc(75% - 10px)
-    .w25
-      width: calc(25% - 10px)
+    .w65
+      width: calc(65% - 10px)
     .w35
       width: calc(37% - 10px)
   .select2-container

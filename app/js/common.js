@@ -182,6 +182,13 @@ $('.motor-brands-slider').slick({
     ]
 });
 
+$('.home-banner').slick({
+    slidesToShow: 1,
+    fade: true,
+    autoplay: true,
+    arrows: false
+});
+
 // slick active
 $(window).on('load resize', function() {
     if ($(window).width() < 1100) {
@@ -349,4 +356,9 @@ $('.drop-item__btn').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('open');
     $(this).siblings('.list-compatibility__sub').slideToggle();
+});
+
+$('.links-details-filter').on('click', function (e) {
+    e.preventDefault();
+    $('.form-filter-details').fadeToggle();
 });
